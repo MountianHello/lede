@@ -9,15 +9,9 @@ name: OpenWrt-CI
 
 on:
   chedule:
-    - cron: 0 20 * * *
-  push:
-     branches:
-       - main
-       - release/*
-  
-  
-  #release:
-    #types: [published]
+    - cron: 0 20 * * * 
+  release:
+    types: [published]
 
 
 jobs:
